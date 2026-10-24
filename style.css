@@ -1,0 +1,219 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff0f6;
+    color: #493044;
+    line-height: 1.7;
+}
+
+header {
+    background-color: #c93678;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffe0ed;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    padding: 55px 8%;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.welcome {
+    color: #c93678;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.hero h2 {
+    color: #b52667;
+    font-size: 42px;
+    margin: 10px 0;
+}
+
+.hero img {
+    width: 42%;
+    height: 310px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px #e9a5c5;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #c93678;
+    color: white;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 25px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #982052;
+}
+
+.about,
+.hobbies,
+.favorites {
+    padding: 35px 8%;
+    text-align: center;
+}
+
+.about {
+    background-color: white;
+    margin: 10px 8%;
+    border-radius: 20px;
+}
+
+section h2 {
+    color: #b52667;
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 30%;
+    min-width: 220px;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px #f0c2d6;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card h3 {
+    color: #c93678;
+    margin: 12px 0;
+}
+
+.favorite-list {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+.favorite-list p {
+    background-color: white;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border-radius: 12px;
+    border-left: 5px solid #c93678;
+}
+
+.favorite-list strong {
+    color: #b52667;
+}
+
+footer {
+    background-color: #c93678;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    margin-top: 25px;
+}
+
+footer h2 {
+    color: white;
+}
+
+.copyright {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* For mobile phones */
+
+@media (max-width: 700px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 35px 6%;
+    }
+
+    .hero img {
+        width: 100%;
+        height: 240px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .about,
+    .hobbies,
+    .favorites {
+        padding: 30px 6%;
+    }
+}
